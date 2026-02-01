@@ -1,5 +1,8 @@
+
+
+
 while True:
-     op = input("Enter operation (+, -, *, / ,%, sq) or 'quit' to quit: ")
+     op = input("Enter operation (+, -, *, / ,%, sq, sqroot) or 'quit' to quit: ")
 
      if op == 'quit':
             print("Exiting the calculator. Goodbye!")
@@ -27,12 +30,19 @@ while True:
                 if num2 == 0:
                      print("Error: Division by zero is not allowed.")
                      continue
-                result = num1 % num2
+                result = num1 / num2 * 100
      else:
-            num1 = float(input("Enter number to square: "))
-            result = num1 ** 2
+            if op == 'sqroot':
+                import math
+                num1 = float(input("Enter number to find square root: "))
+                if num1 < 0:
+                    print("Error: Cannot compute square root of a negative number.")
+                    
+                result = math.sqrt(num1)
+            elif op == 'sq':
+                 num1 = float(input("Enter number to square: "))
+                 result = num1 ** 2
 
     
-
-     print("The result is: {result}")              
+     print(f"The result is: {result}")        
                    
