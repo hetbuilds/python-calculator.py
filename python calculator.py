@@ -5,11 +5,11 @@ while True:
             print("Exiting the calculator. Goodbye!")
             break
      
-     if op not in ['+', '-', '*', '/', '%', 'sq']:
+     if op not in ['+', '-', '*', '/', '%', 'sq', 'sqroot']:
         print("Invalid operation. Please try again.")
         continue
         
-     if op not in ['sq']:
+     if op not in ['sq', 'sqroot']:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
             if op == '+':
