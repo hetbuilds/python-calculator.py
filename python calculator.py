@@ -1,6 +1,3 @@
-
-
-
 while True:
      op = input("Enter operation (+, -, *, / ,%, sq, sqroot) or 'quit' to quit: ")
 
@@ -45,4 +42,5 @@ while True:
 
     
      print(f"The result is: {result}")        
+
                    
